@@ -17,7 +17,15 @@ This Python script uses Selenium and BeautifulSoup to scrape job listings from I
 
 ### 2. MongoDb
 
-The `MongoDb` folder might contain code related to storing scraped data in a MongoDB database (if applicable).
+In the `MongoDb` folder, you'll find the code related to storing the scraped data in a MongoDB database and integrating it with Django Admin.
+
+#### Add_ansFile_to_Cluster.py
+
+This Python script connects to your MongoDB cluster and reads the `ans.csv` file containing the scraped job listings. It then adds this data to the `scraped_db` database.
+
+#### Add_Data_to_Django_Admin.py
+
+This script demonstrates how to integrate the scraped data with the Django Admin panel. It adds the data from the MongoDB collection to the Django models, allowing you to manage and display the job listings using the Django Admin interface.
 
 ### 3. Django
 
