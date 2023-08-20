@@ -1,5 +1,4 @@
 # WebScraping
-# Web Scraping Assignment
 
 This repository contains my assignment on web scraping, where I extracted job listings for the keyword "Python developer" from Indeed.com.
 
