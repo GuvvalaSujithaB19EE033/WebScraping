@@ -51,39 +51,9 @@ dataframe = pd.DataFrame(job_data_list)
 
 # Save the DataFrame to a CSV file
 dataframe.to_csv('ans.csv', index=False)
-# Print the DataFrame
 
-dataframe.to_csv('ans.csv',index=False)
 
    
         
 
     
-# Define job search URL
-#job_search_url = "https://www.indeed.com/jobs?q=Python+developer&l=New+York"
-
-# Open job search URL
-#driver.get(job_search_url)
-# time.sleep(2)
-
-# # Parse the page content with BeautifulSoup
-# soup = BeautifulSoup(driver.page_source, "html.parser")
-
-# # Find job postings
-# job_postings = soup.find_all("div", class_="jobsearch-SerpJobCard")
-
-# # Extract job details and salary information
-# for job in job_postings:
-#     title = job.find("h2", class_="title").text.strip()
-#     company = job.find("span", class_="company").text.strip()
-#     location = job.find("span", class_="location").text.strip()
-#     salary = job.find("span", class_="salaryText").text.strip() if job.find("span", class_="salaryText") else "Salary information not available"
-
-#     print("Job Title:", title)
-#     print("Company:", company)
-#     print("Location:", location)
-#     print("Salary:", salary)
-#     print("=" * 50)
-
-# # Close the webdriver
-
