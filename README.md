@@ -29,19 +29,20 @@ This script demonstrates how to integrate the scraped data with the Django Admin
 
 ### 3. Django
 
-The `Django` folder might contain code related to integrating the scraped data into a Django web application (if applicable).
+In the `Django` folder, you'll find the code related to integrating the scraped data with a Django web application.
 
-## Usage
+#### Project Setup and Integration
 
-To run the web scraping script and extract job listings:
+1. `myproject`: To work with the MongoDB cluster. Updated the database settings in `settings.py` to connect to the MongoDB cluster.
 
-1. Navigate to the `Web_Scraping` folder.
-2. Run the `scraping.py` script using your preferred Python interpreter.
-3. The scraped job listings will be saved to the `ans.csv` file in the same directory.
+2. `myapp`: Inside the project, Created an app named `myapp` to handle the integration of the scraped data.
 
-## Notes
+3. `myapp/models.py`: Defined a `Candidates` model to represent the job listings data stored in the MongoDB collection. This model is used to add the scraped data to the Django Admin panel.
 
-- Make sure you have the required libraries installed, such as Selenium and BeautifulSoup, before running the script.
-- This is a basic example and might not cover all details of the assignment.
+4. `myapp/admin.py`: Registered the `Candidates` model with the Django Admin panel so that you can view, edit, and manage the scraped job listings directly from the admin interface.
 
-Feel free to explore the subfolders and files in this repository to learn more about how the web scraping assignment was completed.
+#### calculate_average_salary.py
+
+This Python script, located in `myproject/myapp/management/commands`, calculates the average salary for Python developers in city, "Hyderabad." It utilizes the data from the `Candidates` model to perform this calculation.
+
+
