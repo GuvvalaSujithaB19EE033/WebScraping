@@ -41,7 +41,7 @@ In the `Django` folder, you'll find the code related to integrating the scraped 
 
 4. `myapp/admin.py`: Registered the `Candidates` model with the Django Admin panel so that you can view, edit, and manage the scraped job listings directly from the admin interface.
 
-#### calculate_average_salary.py
+### 4. calculate_average_salary.py
 
 This Python script, located in `myproject/myapp/management/commands`, calculates the average salary for Python developers in city, "Hyderabad." It utilizes the data from the `Candidates` model to perform this calculation.
 
