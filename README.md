@@ -39,6 +39,10 @@ In the `Django` folder, you'll find the code related to integrating the scraped 
 3. `myapp/models.py`: Defined a `Candidates` model to represent the job listings data stored in the MongoDB collection. This model is used to add the scraped data to the Django Admin panel.
 
 4. `myapp/admin.py`: Registered the `Candidates` model with the Django Admin panel so that you can view, edit, and manage the scraped job listings directly from the admin interface.
+#### Installations
+install asgiref==3.5.0 Django==4.0.3 djongo==1.3.6 dnspython==2.2.1 pykerberos==1.2.4 pymongo==3.12.1 python-snappy==0.6.1 pytz==2022.1 sqlparse==0.2.4
+
+Command to runserver : 'python manage.py runserver' 
 
 ### 4. calculate_average_salary.py
 
