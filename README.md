@@ -44,6 +44,8 @@ install asgiref==3.5.0 Django==4.0.3 djongo==1.3.6 dnspython==2.2.1 pykerberos==
 
 Command to runserver : 'python manage.py runserver' 
 
+Url for admin panel : [127.0.0.1:8000/admin/myapp/candidate](url)
+
 ### 4. calculate_average_salary.py
 
 This Python script, located in `myproject/myapp/management/commands`, calculates the average salary for Python developers in city, "Hyderabad." It utilizes the data from the `Candidates` model to perform this calculation.
